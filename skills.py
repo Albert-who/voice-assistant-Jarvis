@@ -79,7 +79,7 @@ def offpc():
 
 def weather():
 	try:
-		params = {'q': 'Novokuznetsk', 'units': 'metric', 'lang': 'ru', 'appid': 'Ваш API'}
+		params = {'q': 'Ваш город', 'units': 'metric', 'lang': 'ru', 'appid': 'Ваш API'}
 		response = requests.get(f'https://api.openweathermap.org/data/2.5/weather', params=params)
 		if not response:
 			raise
